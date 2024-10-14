@@ -594,7 +594,7 @@ const reviews = [
   },
 ];
 
-function displayProducts(products) {
+function displayProducts() {
   const container = document.getElementById("product-container");
 
   products.forEach((product) => {
@@ -632,6 +632,4 @@ function sortProducts(sorted) {
   displayProducts(sortedProducts);
 }
 
-window.onload = () => {
-  displayProducts(products);
-};
+displayProducts();
